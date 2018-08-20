@@ -1,0 +1,33 @@
+<div>
+  <h3>Contacts: </h3>
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <p>Name: {{contact.firstName}} {{contact.lastName}} Phone: {{contact.phoneNumber}} Email: {{contact.email}}</p>
+    </li>
+  </ul>
+</div>
+<div>
+  <form #contactData="ngForm" (ngSubmit)="onSubmit(contactData.value)">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" placeholder="First Name" name="firstName" required ngModel>
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" placeholder="Last Name" name="lastName" required ngModel>
+    </div>
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="number" placeholder="Phone Number" name="phoneNumber" required ngModel>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Email" name="email" email required ngModel>
+    </div>
+
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

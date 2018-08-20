@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+div {
+    text-align: left;
+}
+li {
+    border-style: solid solid solid solid;
+    margin: 5px;
+    padding-left: 5px;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+form input {
+    border-right: none;
+    margin: 5px;
+}
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border-right: 10px solid red;
+}
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+    border-right: 10px solid green;
+}

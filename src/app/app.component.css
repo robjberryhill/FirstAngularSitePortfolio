@@ -1,0 +1,27 @@
+  #header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #header img {
+    max-width: 300px;
+    border: 1px solid black;
+    box-shadow: 2px 5px 2px rgb(166, 166, 166);
+  }
+  #motto {
+      text-align: left;
+      font-weight: 900;
+      color: rgb(123, 157, 179);
+  }
+  #about {
+      text-align: left;
+      border-style: none none solid none;
+      border-color: darkolivegreen;
+  }
+  app-skills {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  app-contacts {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
