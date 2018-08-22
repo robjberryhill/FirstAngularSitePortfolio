@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from '../models/contact';
-import { ContactsService } from '../services/contacts.service';
+import { Contact } from '../../../../shared/models/contact';
+import { ContactsService } from '../../services/contacts.service';
 
 
 

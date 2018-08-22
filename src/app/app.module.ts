@@ -3,28 +3,30 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { SkillsComponent } from './skills/skills.component';
 
-import { SkillsService } from './services/skills.service';
-import { ContactsComponentComponent } from './contacts-component/contacts-component.component';
+import { SkillsService } from './modules/skills/services/skills.service';
 
-import { ContactsService } from './services/contacts.service';
-import { GreetingComponent } from './greeting/greeting.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactsService } from './modules/contacts/services/contacts.service';
+import { GreetingComponent } from './components/greeting/greeting.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { SkillsModule } from './modules/skills/skills.module';
+import { ContactsModule } from './modules/contacts/contacts.module';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent,
-    ContactsComponentComponent,
     GreetingComponent,
-    ContactFormComponent
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    SkillsModule,
+    ContactsModule,
+    AppRoutingModule
   ],
-  providers: [SkillsService, ContactsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

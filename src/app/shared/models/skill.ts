@@ -1,4 +1,4 @@
-import { Level } from '../types/level.enum';
+import { Level } from '../../shared/types/level.enum';
 
 export class Skill {
   id: number;

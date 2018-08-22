@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Skill } from '../models/skill';
-import { Level } from '../types/level.enum';
+import { Skill } from '../../../shared/models/skill';
+import { Level } from '../../../shared/types/level.enum';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -27,6 +27,9 @@ export class SkillsService {
   getSkills = (): Observable<Skill[]> => {
     return of(this.skills);
   }; 
+  getId(id: number): Observable<Skill> {
+    return of(this.skills.find(skills => skills.id === id));
+  }
 
   constructor() { }
 }

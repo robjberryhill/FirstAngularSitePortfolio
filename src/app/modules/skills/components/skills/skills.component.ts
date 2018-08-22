@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../models/skill';
-import { Level } from '../types/level.enum';
-
-import { SkillsService } from '../services/skills.service';
+import { Skill } from '../../../../shared/models/skill';
+import { Level } from '../../../../shared/types/level.enum';
+import { SkillsService } from '../../services/skills.service';
 
 @Component({
   selector: 'app-skills',
@@ -12,7 +11,7 @@ import { SkillsService } from '../services/skills.service';
 export class SkillsComponent implements OnInit {
   skills: Skill[];
   dataService: SkillsService;
-
+  
   constructor(private skillsService: SkillsService) {
     this.dataService = this.skillsService;
   }
